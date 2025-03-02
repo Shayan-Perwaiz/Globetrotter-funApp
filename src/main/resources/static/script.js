@@ -1,7 +1,7 @@
 let currentDestination;
 let score = 0;
 
-// Load game & check for invite code in URL
+
 window.onload = function () {
     const params = new URLSearchParams(window.location.search);
     const inviteCode = params.get("invite");
@@ -15,7 +15,7 @@ window.onload = function () {
     fetchRandomDestination();
 };
 
-// Fetch a random destination and display clues
+
 async function fetchRandomDestination() {
     try {
         const response = await fetch('/api/destination/random');
@@ -28,7 +28,7 @@ async function fetchRandomDestination() {
     }
 }
 
-// Submit user’s guess and update score
+
 async function submitGuess() {
     const guess = document.getElementById('guess').value.trim();
 
@@ -58,7 +58,7 @@ async function submitGuess() {
 
         document.getElementById('score').innerText = `Score: ${score}`;
 
-        // Load new destination after a short delay
+        
         setTimeout(fetchRandomDestination, 2000);
 
     } catch (error) {
@@ -66,7 +66,7 @@ async function submitGuess() {
     }
 }
 
-// Generate an invite link for challenging a friend
+
 function generateInvite() {
     let username = prompt("Enter your username:");
     if (!username) return;
@@ -81,20 +81,20 @@ function generateInvite() {
         });
 }
 
-// Share invite link on WhatsApp
+
 function shareOnWhatsApp(inviteLink) {
     const whatsappUrl = `https://api.whatsapp.com/send?text=Join me in the Globetrotter Challenge! ${inviteLink}`;
     window.open(whatsappUrl, '_blank');
 }
 
-// 🎉 Confetti animation for correct answer
+
 function showConfettiAnimation() {
     const result = document.getElementById('result');
     result.innerHTML += " 🎉";
     result.style.color = "green";
 }
 
-// 😢 Sad animation for incorrect answer
+
 function showSadAnimation() {
     const result = document.getElementById('result');
     result.innerHTML += " 😢";
