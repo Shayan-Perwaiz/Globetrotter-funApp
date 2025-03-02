@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globetrotter Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌍 Welcome to the Globetrotter Challenge! ✈️</h1>
+
+<div class="game-container">
+    <h2>Can you guess the destination? 🤔</h2>
+    <p id="clues">Loading clues...</p>
+
+    <input type="text" id="guess" placeholder="Enter your guess here">
+    <button onclick="submitGuess()">Submit Guess</button>
+    <p id="result"></p>
+
+    <h3 id="score">Score: 0</h3>
+    <button onclick="fetchRandomDestination()">Next Destination</button>
+</div>
+
+<hr>
+
+<div class="invite-section">
+    <h2>🎉 Challenge a Friend! 🎉</h2>
+    <button onclick="generateInvite()">Generate Invite Link</button>
+    <p id="inviteLink"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
