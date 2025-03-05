@@ -39,7 +39,6 @@ Welcome to the **Globetrotter Challenge** – a fun and interactive web app wher
 | Method | Endpoint | Description |
 |--------|---------|-------------|
 | `POST` | `/api/user/register` | Register a new user |
-| `GET` | `/api/user/{username}/score` | Get user score |
 
 
 ---
