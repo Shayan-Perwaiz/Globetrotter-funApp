@@ -11,10 +11,7 @@ Welcome to the **Globetrotter Challenge** – a fun and interactive web app wher
 
 ##  Tech Stack
 - **Backend:** Java, Spring Boot, Spring Data JPA, Hibernate, MySQL
-- **Frontend:** HTML, CSS, JavaScript (Vanilla JS)
-- **Security:** Spring Security, JWT Authentication
-- **Database:** MySQL (Hosted on Railway)
-- **Deployment:** Hosted on **Vercel / Netlify** (Frontend) & **Railway** (Backend)
+- **Frontend:** HTML, CSS, JavaScript
 
 
 
